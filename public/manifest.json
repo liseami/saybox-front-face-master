@@ -1,0 +1,25 @@
+{
+  "short_name": "Fantsy",
+  "name": "你的电子客厅，每天都有聚会",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "//files.revome.cn/public/0d811a87d0c3cc66cc3551dce644356a_logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "//files.revome.cn/public/3650ebac97e06b39844ff0639ebc798c_logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
