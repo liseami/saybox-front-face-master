@@ -1,22 +1,23 @@
 
 import { QRCodeSVG } from "qrcode.react";
+import aboutus from "../static/aboutus.svg"
 
 function IndexPage() {
     return (
         <div className="relative flex flex-col w-full justify-start items-center overflow-clip">
+            
+            <img src={aboutus} alt="无法显示图片" className="w-full sm:w-10/12"></img>
 
-            <img src="//files.revome.cn/public/71ffae29589e1f7ec2f36e4e7d584064_indexpagebanner.png" alt="无法显示图片" className="w-full sm:hidden"></img>
-
-            <div className=" animate-fade-in-down flex flex-col space-y-4 px-6 w-full -mt-20 sm:mt-24 items-center">
-
+            <div className=" animate-fade-in-down flex flex-col space-y-4 px-6 w-full  sm:  items-center">
+           
                 <h1 className=" text-[40px] font-bold text-center sm:text-7xl">
-                    <em className="text-transparent bg-clip-text bg-gradient-to-bl from-[#FC5753] via-[#A147FC] to-[#79C5FC]">
-                        元宇宙
+                    <em className="text-transparent bg-clip-text bg-gradient-to-bl from-[#1DA1F2] via-[#A147FC] to-[#1DA1F2]">
+                        Saybox
                     </em>
-                    房地产，如梦来袭
+                    说盒
                 </h1>
                 <p className="px-4 text-black/50 font-normal text-sm text-center sm:text-xl">
-                    PartyRoom是中国Web3社交网络的起点。打造你的线上客厅。招待你的亲朋好友。
+                    说盒是一款轻盈、安全的聊天软件。具备强劲的性能和极简的设计。
                 </p>
 
                 <div className="w-full sm:py-6 sm:flex sm:justify-center">
@@ -37,7 +38,7 @@ function IndexPage() {
                         <div className="pt-16 w-full sm:pt-0 sm:w-2/3  sm:hidden transition-all ">
                             <div className="flex rounded-2xl p-1 shadow-xl mx-auto bg-gradient-to-r  from-[#FC5753]/25 via-[#A147FC] to-[#79C5FC]/30 
                             sm:from-[#FC5753]/0 sm:via-[#A147FC]/0 sm:to-[#79C5FC]/0 sm:bg-black sm:rounded-full">
-                                <button onClick={()=> window.open("https://apps.apple.com/cn/app/id1612946066", "_blank")} className="h-14 w-full rounded-xl  bg-black/90
+                                <button onClick={()=> window.open("https://apps.apple.com/cn/app/id1642861528", "_blank")} className="h-14 w-full rounded-xl  bg-black/90
                             sm:bg-black sm:rounded-full ">
                                     <span className=" text-white text-base font-bold ">
                                         下载
@@ -61,7 +62,7 @@ function IndexPage() {
                         {/* 版本要求 */}
                         <div className="italic  text-black/50 overflow-hidden justify-center w-full text-sm font-normal flex flex-row space-x-4
                     sm:text-black/80">
-                            <span>v1.0.032</span>
+                            <span>v0.0.1</span>
                             <span className="text-black/30">|</span>
                             <span>苹果 iOS15+</span>
                             <span className="text-black/30">|</span>
@@ -75,7 +76,7 @@ function IndexPage() {
                             sm:rounded-full">
                                 <div className="flex flex-row items-center   space-x-2 justify-between  text-left text-sm  shadow-2xl bg-white/90 backdrop-blur-2xl rounded-xl border-solid border border-stone-200 px-4 py-5
                                 sm:rounded-full">
-                                    <p >了解我们的使命、愿景、以及如何重新连接人与人。</p>
+                                     <a href="https://www.liaoparty.com"target="_blank" rel="noopener noreferrer">了解我们的使命、愿景、以及如何重新连接人与人。</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                     </svg>

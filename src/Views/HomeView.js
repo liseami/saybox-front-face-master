@@ -9,9 +9,9 @@ function HomeView() {
     return (
         <div>
             <IndexPage />
-            <RoomsView />
-            <FeaturesView />
-            <DeclarationView />
+            {/* <RoomsView /> */}
+            {/* <FeaturesView />
+            <DeclarationView /> */}
         </div>
     )
 }
