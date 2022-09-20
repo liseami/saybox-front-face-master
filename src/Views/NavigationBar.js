@@ -25,7 +25,7 @@ function NavigationBar() {
                 <Link to="/" className="items-center cursor-pointer">
                     <div className="flex flex-row font-normal space-x-2">
                         <img src= {logo} className="w-6 h-6 rounded-lg"></img>
-                        <p className="font-bold">Saybox说盒</p>
+                        <p className="font-bold">Fastgo光速启动</p>
                     </div>
                 </Link>
 
