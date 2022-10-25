@@ -2,7 +2,14 @@
 import { QRCodeSVG } from "qrcode.react";
 import aboutus from "../static/aboutus.svg"
 
+
+
 function IndexPage() {
+
+    let u = navigator.userAgent;
+    let isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;   //判断是否是 android终端
+    let isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);     //判断是否是 iOS终端
+    let downloadUrl = isIOS ? "https://apps.apple.com/cn/app/id1642861528" : "http://package.alchat.cn/package/download?id=1993"
     return (
         <div className="relative flex flex-col w-full justify-start items-center overflow-clip">
             
@@ -38,7 +45,7 @@ function IndexPage() {
                         <div className="pt-16 w-full sm:pt-0 sm:w-2/3  sm:hidden transition-all ">
                             <div className="flex rounded-2xl p-1 shadow-xl mx-auto bg-gradient-to-r  from-[#FC5753]/25 via-[#A147FC] to-[#79C5FC]/30 
                             sm:from-[#FC5753]/0 sm:via-[#A147FC]/0 sm:to-[#79C5FC]/0 sm:bg-black sm:rounded-full">
-                                <button onClick={()=> window.open("https://apps.apple.com/cn/app/id1642861528", "_blank")} className="h-14 w-full rounded-xl  bg-black/90
+                                <button onClick={()=> window.open(downloadUrl, "_blank")} className="h-14 w-full rounded-xl  bg-black/90
                             sm:bg-black sm:rounded-full ">
                                     <span className=" text-white text-base font-bold ">
                                         下载
@@ -55,18 +62,18 @@ function IndexPage() {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </div>
-                            <QRCodeSVG value="http://test.revome.cn" className="hidden sm:block" />
+                            <QRCodeSVG value="https://saybox.liaoparty.com/#/" className="hidden sm:block" />
                         </div>
 
 
                         {/* 版本要求 */}
                         <div className="italic  text-black/50 overflow-hidden justify-center w-full text-sm font-normal flex flex-row space-x-4
                     sm:text-black/80">
-                            <span>v0.0.1</span>
+                            <span>v1.0.0</span>
                             <span className="text-black/30">|</span>
                             <span>苹果 iOS15+</span>
                             <span className="text-black/30">|</span>
-                            <span>Android(开发中)</span>
+                            <span>Android</span>
                         </div>
 
                         {/* 使命、愿景 */}
