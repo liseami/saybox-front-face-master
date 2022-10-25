@@ -40,6 +40,7 @@ function Footer() {
                 <div className="flex flex-col space-y-2">
                     <a >Desgin and Developed in Wuhan，Hubei.</a>
                     <a >苏州萌咪网络科技有限责任公司</a>
+                    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">苏ICP备2022028428号-2</a>
                 </div>
                 <a>版权所有 ©️2022 苏州萌咪网络科技有限责任公司.保留所有权利</a>
             </div>
